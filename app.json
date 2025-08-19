@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "TX-JF",
+    "slug": "TX-JF",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "publicPath": "/",
+      "baseUrl": "/"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow this app to access your location."
+        }
+      ],
+      "expo-router",
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "2b2a1c4f-05c7-40aa-bb6c-5947034bc3d7"
+      }
+    },
+    "android": {
+      "package": "com.rbyers87.TXJF"
+    }
+  }
+}
